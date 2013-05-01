@@ -1,0 +1,117 @@
+@import "iconos.styl"
+
+a
+	color #00F
+
+a:visited
+	color #00D
+
+body
+	background #CBF5f5
+	color #333
+	font-family "Arial"
+	font-size 16px
+	font-family "Open Sans"
+	text-align left
+
+header
+	background #222
+	border-bottom 3px solid #0AF
+	color #DDD
+	margin 0
+	padding 0.5em
+	width 100%
+	position fixed
+
+	img
+		width 100%
+
+	h1
+		font-size 20px
+		font-weight normal
+		margin 0
+		padding 0
+
+	#avatar, #logo, #titulo_nav
+		display inline-block
+		vertical-align top
+
+	#avatar a
+		background #444
+		display block
+		margin 0
+		padding 3px
+		text-decoration none	
+
+	#avatar, #logo
+		height 40px
+		width 40px
+
+	#titulo_nav
+		width 70%
+
+		nav a
+			color white
+			border-bottom 4px solid white
+			border-left 1px solid white
+			border-right 1px solid white
+			font-weight 0.8em
+			padding 0.1em 1em
+			text-decoration none
+
+		nav a:hover
+			border-color #0AF
+
+#contenido
+	padding 4em 0.5em
+
+	#nota
+		background #FAFAD6
+		border-radius 1em
+		height 3em
+		font-size 0.8em
+		margin 1em
+		overflow hidden
+		padding 1em
+		text-align justify
+		-webkit-transition all 1s ease
+
+	#nota:hover
+		height 20em
+
+	.item
+		background white
+		border 2px solid #DDD
+		border-radius 0.5em
+		height 4em
+		margin: 0.5em 0 0 0
+		overflow hidden
+		padding 0.5em
+
+		h2
+			font-size 16px
+			margin 0
+			padding 0
+
+		.autor
+			font-size 0.7em
+			margin -3em 0 0 15%
+
+			p
+				display inline
+
+		.titulo_item, .votos
+			display inline-block
+			vertical-align top
+
+		.titulo_item
+			width 80%
+
+			figure
+				float right
+
+		.votos
+			text-align center
+			width 14%
+
+@import "responsive.styl"
