@@ -1,17 +1,19 @@
 @import "iconos.styl"
 
 a
-	color #00F
+	color #54AACF
+
+a:hover
+	text-decoration none
 
 a:visited
-	color #00D
+	color #54AACF
 
 body
-	background #CBF5f5
+	background #CBF5F5
 	color #333
-	font-family "Arial"
-	font-size 16px
 	font-family "Open Sans"
+	font-size 16px
 	text-align left
 
 header
@@ -20,14 +22,14 @@ header
 	color #DDD
 	margin 0
 	padding 0.5em
-	width 100%
 	position fixed
+	width 100%
 
 	img
 		width 100%
 
 	h1
-		font-size 20px
+		font-size 18px
 		font-weight normal
 		margin 0
 		padding 0
@@ -36,31 +38,31 @@ header
 		display inline-block
 		vertical-align top
 
+	#avatar, #logo
+		height 40px
+		width 40px
+
 	#avatar a
 		background #444
 		display block
 		margin 0
 		padding 3px
-		text-decoration none	
-
-	#avatar, #logo
-		height 40px
-		width 40px
+		text-decoration none
 
 	#titulo_nav
 		width 70%
 
 		nav a
 			color white
-			border-bottom 4px solid white
-			border-left 1px solid white
-			border-right 1px solid white
-			font-weight 0.8em
+			border-bottom 4px solid #0AF
+			border-left 1px solid #0AF
+			border-right 1px solid #0AF
+			font-size 0.8em
 			padding 0.1em 1em
 			text-decoration none
 
 		nav a:hover
-			border-color #0AF
+			border-color white
 
 #contenido
 	padding 4em 0.5em
@@ -68,11 +70,11 @@ header
 	#nota
 		background #FAFAD6
 		border-radius 1em
-		height 3em
 		font-size 0.8em
+		height 3em
 		margin 1em
 		overflow hidden
-		padding 1em
+		padding 0 2em
 		text-align justify
 		-webkit-transition all 1s ease
 
@@ -83,8 +85,7 @@ header
 		background white
 		border 2px solid #DDD
 		border-radius 0.5em
-		height 4em
-		margin: 0.5em 0 0 0
+		margin 0.5em 0 0 0
 		overflow hidden
 		padding 0.5em
 
@@ -100,6 +101,29 @@ header
 			p
 				display inline
 
+			.iconito-star
+				color #CC0
+				cursor pointer
+				display inline-block
+				font-size 1.5em
+
+			.iconito-star:hover:before
+				color #ED0
+				content: "\e003"
+
+			.tag
+				background #80CCB2
+				border-radius 0.5em
+				color white
+				cursor pointer
+				display inline-block
+				font-weight bold
+				padding 0.5em
+				margin 0 0 2px 1em
+
+			.tag:hover
+				background #589D86
+
 		.titulo_item, .votos
 			display inline-block
 			vertical-align top
@@ -113,5 +137,12 @@ header
 		.votos
 			text-align center
 			width 14%
+
+			a
+				text-decoration none
+			.down
+				color #FFB341
+			.up
+				color #4B8FF5
 
 @import "responsive.styl"

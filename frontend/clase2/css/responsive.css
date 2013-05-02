@@ -1,0 +1,5 @@
+@media screen and (min-width: 768px){body{background:#cbf5f5}
+#contenido #nota{float:right;width:20%;height:auto;-webkit-transition:none}
+#contenido .item{display:inline-block;vertical-align:top;width:32%}
+}@media screen and (min-width: 1208px){#contenido .item{width:30%}
+}
